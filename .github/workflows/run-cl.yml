@@ -1,0 +1,19 @@
+name: Run test.sh Script
+
+on: 
+  push:
+    branches: 
+      - main  # This triggers the workflow when you push to the main branch
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # The runner environment
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3  # This pulls your repo's content
+
+      - name: Run test.sh Script
+        run: |
+          chmod +x test.sh  # Make the script executable
+          ./test.sh         # Run the script
