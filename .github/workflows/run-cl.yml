@@ -16,4 +16,4 @@ jobs:
       - name: Run test.sh Script
         run: |
           chmod +x test.sh  # Make the script executable
-          ./test.sh 9 8 \*         # Run the script
+          ./test.sh 5 8 +         # Run the script
