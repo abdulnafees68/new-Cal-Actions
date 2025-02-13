@@ -21,7 +21,7 @@ case $op in
       echo "Result: $(($num1 / $num2))"
     else
       echo "Error: Division by zero is not allowed."
-    ;fi
+    fi
     ;;
   *)
     echo "Invalid operation"
